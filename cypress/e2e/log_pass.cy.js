@@ -5,7 +5,7 @@ describe('Проверка авторизации', function () {
    beforeEach('Начало теста', function () {
       cy.visit('/'); //зашёл на сайт   
     });
-   afterEach('Конец текста', function () {
+   afterEach('Конец теста', function () {
       cy.get('#exitMessageButton > .exitIcon').should('be.visible'); // крестик есть и он виден пользователю
     });
 
