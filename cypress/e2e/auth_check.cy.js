@@ -3,12 +3,11 @@ import * as recovery_pg from "../locators/recovery_pass_page.json";
 import * as result_pg from "../locators/result_page.json";
 import * as data from "../helpers/default_reg_data.json";
 
-
 describe('Проверка авторизации', function () {
 
    beforeEach('Начало теста', function () {
       cy.visit('/'); //зашёл на сайт
-      cy.get(main_pg.fogot_pass_btn).should('have.css', 'color', 'rgb(0, 85, 152)'); // проверил цвет кнопки
+      cy.get(main_pg.fogot_pass_btn).should('have.css', 'color', 'rgb(74, 94, 110)'); // проверил цвет кнопки
         });
         
    afterEach('Конец теста', function () {

@@ -2,8 +2,8 @@ describe('Покупка аватара тренера', function () {
 
     it('НАЗВАНИЕ_ТЕСТ', function () {
         cy.visit('https://pokemonbattle.ru/'); // зашел на сайт
-        cy.get('#k_email').type('USER_LOGIN') // ввел логин
-        cy.get('#k_password').type('USER_PASSWORD') // ввел пароль
+        cy.get('#k_email').type('logisticqc@yandex.ru') // ввел логин
+        cy.get('#k_password').type('S9LJbAfiaw!6pRB') // ввел пароль
         cy.get('.MuiButton-root').click(); // нажал Войти
         cy.wait(2000);
 // вошел в Покемоны
