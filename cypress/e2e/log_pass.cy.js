@@ -5,8 +5,7 @@ describe('Проверка авторизации', function () {
    beforeEach('Начало теста', function () {
       cy.visit('/'); //зашёл на сайт   
     });
-
-    afterEach('Конец теста', function () {
+   afterEach('Конец теста', function () {
       cy.get('#exitMessageButton > .exitIcon').should('be.visible'); // крестик есть и он виден пользователю
     });
 
@@ -62,7 +61,7 @@ describe('Проверка авторизации', function () {
 
      // 5. проверка на негативный кейс валидации
      it('Проверка валидации логина', function () {
-               
+        
         cy.get('#mail').type('germandolnikov.ru'); // ввёл логин без @
         cy.get('#pass').type(data.pass); // ввёл верный пароль
         cy.get('#loginButton').click(); // нажал кнопку войти
@@ -73,8 +72,8 @@ describe('Проверка авторизации', function () {
     })
 
     //6. проверка на приведение к строчным буквам
-    it('Приведение к строчным буквам', function () {
-           
+    it('Приведение к строчным буквам', function () {   
+        
         cy.get('#mail').type('GerMan@Dolnikov.ru'); // ввёл ВерНый Логин
         cy.get('#pass').type(data.pass); // ввёл верный пароль
         cy.get('#loginButton').click(); // нажал кнопку войти

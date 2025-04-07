@@ -1,6 +1,6 @@
 describe('Покупка аватара тренера', function () {
 
-    it('НАЗВАНИЕ_ТЕСТ', function () {
+    it('Покупка аватара', function () {
         cy.visit('https://pokemonbattle.ru/'); // зашел на сайт
         cy.get('#k_email').type('logisticqc@yandex.ru') // ввел логин
         cy.get('#k_password').type('S9LJbAfiaw!6pRB') // ввел пароль
